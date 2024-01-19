@@ -8,6 +8,7 @@ const { createSecretToken } = require("../util/SecretToken");
 
 
 
+
 module.exports.Signup = async (req, res, next) => {
   try {
     const { username, email, password, phonenumber, exitmark, createdAt } = req.body;
@@ -122,3 +123,5 @@ module.exports.Signup = async (req, res, next) => {
       res.status(500).send('Server Error');
     }
   }
+
+ 
